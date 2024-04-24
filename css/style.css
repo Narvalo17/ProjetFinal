@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 .content {
-    max-width: 600px;
+    max-width: 1000px;
     margin: auto;
     margin-top: 100px;
     padding: 20px;
@@ -159,6 +159,7 @@ form button:hover {
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     text-align: center;
+    
 }
 
 .box h3 {
@@ -167,12 +168,18 @@ form button:hover {
 }
 
 .box p {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    height: 0;
+
     color: #333;
+    transition-duration: .6s;
 }
 
 .box.active p {
-    display: block;
+   /*  display: block; */
+   height: 9rem;
+opacity: 1;
     
 }
 .contact-form textarea {
@@ -183,7 +190,29 @@ form button:hover {
     resize: none; 
     
 }
-@media screen and (max-width: 767px) {
+
+
+footer {
+    background: rgba(234, 234, 234, 0.5);
+    color: #080808;
+    padding: 1rem 0;
+    text-align: center;
+ 
+}
+.logo {
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+/* media queris */
+
+@media screen and (max-width: 600px) {
+    body{
+        display: block;
+        height: initial;
+    }
     .hero {
         margin: 50px auto;
         padding: 30px;
@@ -213,19 +242,3 @@ form button:hover {
     }
     
 }
-
-footer {
-    background: rgba(234, 234, 234, 0.5);
-    color: #080808;
-    padding: 1rem 0;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-}
-.logo {
-    
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-}
-
