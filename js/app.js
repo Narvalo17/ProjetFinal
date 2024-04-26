@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+userInput.onclick = function(){
+    datalist.style.display = 'block';
+}
 document.getElementById('userInput').onchange = function() {
     var selectedValue = this.value.toLowerCase();
     if (selectedValue === 'client') {
@@ -18,4 +21,5 @@ document.getElementById('userInput').onchange = function() {
     } else if (selectedValue === 'professionnelle') {
         window.location.href = './inscriptionPro.html'; 
     }
+
 }
