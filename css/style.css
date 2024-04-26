@@ -224,8 +224,16 @@ opacity: 1;
     max-height: 15rem; 
     border-radius: 0.8rem;
     resize: none;
-
-    
+}
+form input[type="file"]{
+    display: none;
+    cursor: pointer;
+}
+.material-symbols-outlined{
+    vertical-align: middle;
+}
+a{
+    color: #4400ff;
 }
 
 
@@ -246,16 +254,7 @@ footer {
     padding-left: 10rem;
     margin-bottom: 1rem;
 }
-form input[type="file"]{
-    display: none;
-    cursor: pointer;
-}
-.material-symbols-outlined{
-    vertical-align: middle;
-}
-a{
-    color: #4400ff;
-}
+
 
 /* media queris */
 
