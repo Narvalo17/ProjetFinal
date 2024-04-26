@@ -151,7 +151,7 @@ form button{
     
 }
 .recup{
-    color: #fff;
+    color: #4400ff;
     text-align: center;
    
 }
@@ -213,7 +213,7 @@ form button:hover {
 }
 
 .box.active p {
-   /*  display: block; */
+   
    height: 9rem;
 opacity: 1;
     
@@ -230,8 +230,8 @@ opacity: 1;
 
 
 footer {
-    background: rgba(234, 234, 234, 0.5);
-    color: #080808;
+    background: rgba(74, 73, 73, 0.5);
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
  
@@ -252,6 +252,9 @@ form input[type="file"]{
 }
 .material-symbols-outlined{
     vertical-align: middle;
+}
+a{
+    color: #4400ff;
 }
 
 /* media queris */

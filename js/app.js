@@ -10,3 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.getElementById('userInput').onchange = function() {
+    var selectedValue = this.value.toLowerCase();
+    if (selectedValue === 'client') {
+        window.location.href = './inscriptionClient.html'; // Rediriger vers la page client
+    } else if (selectedValue === 'professionnelle') {
+        window.location.href = './inscriptionPro.html'; 
+    }
+}
