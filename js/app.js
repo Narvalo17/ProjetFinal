@@ -11,15 +11,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-userInput.onclick = function(){
-    datalist.style.display = 'block';
+function displayClientForm() {
+    document.getElementById('clientForm').style.display = 'block';
+    document.getElementById('professionnelleForm').style.display = 'none';
 }
-document.getElementById('userInput').onchange = function() {
-    var selectedValue = this.value.toLowerCase();
-    if (selectedValue === 'client') {
-        window.location.href = './inscriptionClient.html'; // Rediriger vers la page client
-    } else if (selectedValue === 'professionnelle') {
-        window.location.href = './inscriptionPro.html'; 
-    }
 
+function displayProfessionnelleForm() {
+    document.getElementById('professionnelleForm').style.display = 'block';
+    document.getElementById('clientForm').style.display = 'none';
 }
+
+document.getElementById('userInput').addEventListener('input', function() {
+    var selectedValue = this.value.toLowerCase();
+    
+    if (selectedValue === 'client') {
+        displayClientForm();
+    } else if (selectedValue === 'professionnelle') {
+        displayProfessionnelleForm();
+    }
+});
+
