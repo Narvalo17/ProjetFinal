@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services proposer</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <h1>2Vis</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="service.html">Services</a></li>
-                 <li><a href="inscription.html">S'inscrire</a></li>
-                <li><a href="s'identifier.html">S'identifier</a></li>
-            </ul>
-        </nav>
-    </header>
 <main>
 <section class="content">
     <h2>Nos services</h2>
@@ -73,23 +53,3 @@
 
 </section>
 </main>
-  
-<footer> 
-    &copy; -2024- Mansouri Youcef -2Vis- Tout droit reserver 
-    <p>
-       <a href="apropos.html"> A propos de nous - </a>
-       <a href="contact.html"> Nous contacter - </a>         
-   </p>
-   <p>
-       Retrouvez nous sur : 
-       <img src="./asset/FB.jpg" alt="FB" class="logo">
-       <img src="./asset/Insta.jpg" alt="Insta" class="logo">
-       <img src="./asset/tiktok.jpg" alt="tiktok" class="logo">
-       <img src="./asset/linkedin.jpg" alt="linkedin" class="logo">
-       <img src="./asset/twitter.jpg" alt="twitter" class="logo">
-   </p>
-</footer>
-    <script type="module" src="./js/app.js"></script>
-   
-</body>
-</html>

@@ -35,6 +35,9 @@ nav ul li a {
     text-decoration: none;
     
 }
+body{
+    color: #fff;
+}
 
 .hero {
     background: rgba(86, 84, 84, 0.5);
@@ -254,7 +257,27 @@ footer {
     padding-left: 10rem;
     margin-bottom: 1rem;
 }
-
+ /* Styles pour la fenêtre pop-up */
+ .popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 9999;
+}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.image-container img {
+    cursor: pointer;
+}
 
 /* media queris */
 
@@ -290,5 +313,6 @@ footer {
     .contact-form textarea {
         width: 100%;
     }
+
     
 }
